@@ -1,0 +1,25 @@
+<html>
+<body>    
+<h1 align="center">String Funtions</h1>
+<h2>his a JavaScript Program</h2>
+<input type="text" id="demo"></input>
+<button onclick="string()">operate</button>
+
+<h3 style="color:black"><b>substring(7,15)</b></h3>
+<p id="demo10"></p>
+<h3 style="color:black"><b>slice(-10)</b></h3>
+<p id="demo11"></p>
+<h3 style="color:black"><b>substr(7,9)</b></h3>
+<p id="demo12"></p>
+<script>
+function string(){
+let text =document.getElementById("demo").value;
+let part = text.substring(7,16);
+document.getElementById("demo10").innerHTML = part;
+let part1 = text.slice(-9);
+document.getElementById("demo11").innerHTML = part1;
+let part2 = text.substr(7,9);
+document.getElementById("demo12").innerHTML = part2;
+}
+</script>
+</body>
