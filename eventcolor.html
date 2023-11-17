@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Change Background Colour on Mouse Click</title>
+<style>
+body { font-family: cursive; }
+#container
+{ width: 1000px;
+height: 400px;
+margin: 50px auto;
+padding: 20px;
+text-align: center;
+border: 1px solid #ccc;}
+.button1 {background-color: #E0FFFF;}
+</style>
+</head>
+<body>
+<div id="container">
+<h1>Change Background Color</h1>
+<i><button class="button button1">Learn more</button></i></div>
+<script>
+const container = document.getElementById('container');
+container.addEventListener('click', () => {
+const colors = ['#7FFFD4', '#FF6347', '#FFFF00', '#FFB6C1','#DFE3EE','#48D1CC','#E50914','#66CDAA','#FF7F50','#fff0f5'];
+const randomColor = colors[Math.floor(Math.random() * colors.length)];
+container.style.backgroundColor = randomColor; });
+</script>
+</body>
+</html>
+
